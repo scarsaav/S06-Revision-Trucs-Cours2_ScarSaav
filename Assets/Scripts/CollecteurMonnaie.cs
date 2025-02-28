@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CollecteurMonnaie : MonoBehaviour
 {
-    public int points;
+    public int points;  //avec les variables public je peux avoir acces a partir d'un autre script a cette meme variable
 
 
     private void Start()
@@ -17,7 +17,7 @@ public class CollecteurMonnaie : MonoBehaviour
         if (other.CompareTag("Monnaie"))
         {
             Destroy(other.gameObject);
-            points++;
+            points++; //ca veut dire on ajoute des points
         }
     }
 }

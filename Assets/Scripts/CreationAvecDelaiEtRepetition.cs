@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,10 +8,22 @@ public class CreationAvecDelaiEtRepetition : MonoBehaviour
     [SerializeField] private GameObject _objetACreer;
     [SerializeField] private GameObject _objetPlacemenent;
 
+   
+  
+
+
     void Start()
     {
         InvokeRepeating("CreerObjet", 3f, 1f);
+  
+        
     }
+
+   
+
+   
+
+
 
     void CreerObjet()
     {
